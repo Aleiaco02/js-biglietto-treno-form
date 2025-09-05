@@ -13,7 +13,73 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <title>Biglietteria</title>
 </head>
-<body>
-    
+<body class="sfondo">
+
+    <!-- contenitore form -->
+     <form class="form" action="">
+        <div class="contenitore">
+        
+            <div class="row">
+                <div class="col-4 ">
+                    <label for="exampleFormControlInput1" class="form-label">Nome e Cognome</label>
+                    <input name="nome" type="text" class=" form-control" id="exampleFormControlInput1" placeholder="">
+                </div>
+                <div class="col-4">
+                    <label for="exampleFormControlInput1" class="form-label ">Km da percorrere</label>
+                    <input name="km" type="text" class=" form-control" id="exampleFormControlInput1" placeholder="">
+                </div>
+                <div class="col-4">
+                    <label for="DefaultSelectExample" class="form-label">Fascia d'età</label>
+                    <select name="eta" class=" form-select" aria-label="DefaultSelectExample">
+                        <option selected>Seleziona età</option>
+                        <option value="1">Minorenne</option>
+                        <option value="2">Maggiorenne</option>
+                        <option value="3">Over 65</option>
+                </select>
+                </div>
+            </div>
+            
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-5">
+                    <button type="submit " class="btn btn-outline-success btn-lg mt-5 ">Calcola</button>
+                    <button type="reset" class="btn btn-outline-danger btn-lg mt-5 ">Annulla</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- contenitore biglietto -->
+        <div class="contenitore-biglietto displayNone">
+            <h3>DETTAGLIO PASSEGGERI</h3>
+            <div class="row">
+                <div class="col-4 grigio">
+                    <h4 class="text-center">NOME PASSEGGERO</h4>
+                    <p class="text-center" name="nomeBiglietto"></p>
+                </div>
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Offerta</th>
+                                <th>Carrozza</th>
+                                <th>Codice CP</th>
+                                <th>Costo biglietto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td name="offerta"></th>
+                                <td name="carrozza"></td>
+                                <td name="codiceCp"></td>
+                                <td name="prezzoVisibile"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </form>
+
 </body>
 </html>

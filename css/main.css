@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenitore{
+    margin: 10% 15% 3% 15%;
+    padding: 10%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.sfondo{
+    background-color: rgb(107, 7, 7);
+}
+
+.contenitore-biglietto{
+    margin: 0 15% ;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.grigio{
+    background-color: grey;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.displayNone{
+    display: none;
+}
