@@ -17,19 +17,24 @@
 
     <!-- contenitore form -->
      <form class="form" action="">
+
+        <div class="container text-center text-white my-4 align-items-center">
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        </div>
+
         <div class="contenitore">
         
             <div class="row">
                 <div class="col-4 ">
-                    <label for="exampleFormControlInput1" class="form-label">Nome e Cognome</label>
+                    <label for="exampleFormControlInput1" class="form-label red">Nome e Cognome</label>
                     <input name="nome" type="text" class=" form-control" id="exampleFormControlInput1" placeholder="">
                 </div>
                 <div class="col-4">
-                    <label for="exampleFormControlInput1" class="form-label ">Km da percorrere</label>
+                    <label for="exampleFormControlInput1" class="form-label red">Km da percorrere</label>
                     <input name="km" type="text" class=" form-control" id="exampleFormControlInput1" placeholder="">
                 </div>
                 <div class="col-4">
-                    <label for="DefaultSelectExample" class="form-label">Fascia d'età</label>
+                    <label for="DefaultSelectExample" class="form-label red">Fascia d'età</label>
                     <select name="eta" class=" form-select" aria-label="DefaultSelectExample">
                         <option selected>Seleziona età</option>
                         <option value="1">Minorenne</option>
@@ -41,29 +46,33 @@
             
 
             <div class="row d-flex justify-content-center">
-                <div class="col-5">
-                    <button type="submit " class="btn btn-outline-success btn-lg mt-5 ">Calcola</button>
-                    <button type="reset" class="btn btn-outline-danger btn-lg mt-5 ">Annulla</button>
+                <div class="col-5 d-flex justify-content-center">
+                    <button name="bottone" type="submit " class="btn btn-lg mt-5 mx-2 bottone-calcola">Calcola</button>
+                    <button type="reset" class="btn btn-lg mt-5 mx-2 bottone-annulla">Annulla</button>
                 </div>
             </div>
         </div>
 
         <!-- contenitore biglietto -->
-        <div class="contenitore-biglietto displayNone">
-            <h3>DETTAGLIO PASSEGGERI</h3>
+         <div class="container text-center text-white my-4 align-items-center">
+            <h1>IL TUO BIGLIETTO</h1>
+        </div>
+
+        <div class="contenitore-biglietto displayNone ">
+            <h4 class="red mb-4">DETTAGLIO PASSEGGERI</h4>
             <div class="row">
-                <div class="col-4 grigio">
-                    <h4 class="text-center">NOME PASSEGGERO</h4>
+                <div class="col-4 ">
+                    <h5 class="text-center red">NOME PASSEGGERO</h5>
                     <p class="text-center" name="nomeBiglietto"></p>
                 </div>
                 <div class="col">
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Offerta</th>
-                                <th>Carrozza</th>
-                                <th>Codice CP</th>
-                                <th>Costo biglietto</th>
+                                <th class="red">Offerta</th>
+                                <th class="red">Carrozza</th>
+                                <th class="red">Codice CP</th>
+                                <th class="red">Costo biglietto</th>
                             </tr>
                         </thead>
                         <tbody>

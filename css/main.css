@@ -5,7 +5,7 @@
 }
 
 .contenitore{
-    margin: 10% 15% 3% 15%;
+    margin: 0% 15% 3% 15%;
     padding: 10%;
     background-color: white;
     border-radius: 20px;
@@ -23,11 +23,46 @@
 }
 
 .grigio{
-    background-color: grey;
+    background-color: rgb(220, 220, 220);
     border-radius: 10px;
     margin-left: 10px;
+    color: rgb(107, 7, 7);
+}
+.red{
+    color: rgb(107, 7, 7) !important;
+
 }
 
 .displayNone{
     display: none;
+}
+
+.bottone-calcola{
+    background-color: rgb(107, 7, 7) !important;
+    color: white !important;
+    border-color: rgb(107, 7, 7) !important;
+}
+
+.bottone-calcola:hover{
+    background-color: rgb(154, 10, 10) !important;
+    color: white !important;
+    border-color: rgb(154, 10, 10) !important;
+    transform: scale(1.1);
+
+}
+
+.bottone-annulla{
+    background-color: white !important;
+    color: rgb(107, 7, 7) !important;
+    border-color: rgb(107, 7, 7) !important;
+}
+
+.bottone-annulla:hover{
+    background-color: rgb(157, 109, 109) !important;
+    color: white !important;
+        border-color: rgb(157, 109, 109) !important;
+        transform: scale(1.1);
+
+
+
 }

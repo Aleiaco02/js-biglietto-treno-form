@@ -39,8 +39,9 @@ form.addEventListener('submit', (e) => {
         contenitoreBiglietto.style.display = "block";
 
         // PULIZIA CAMPI
-        form.reset();
-
+        document.querySelector("input[name='nome']").value = "";
+        document.querySelector("input[name='km']").value = "";
+        document.querySelector("select[name='eta']").value = "0";
 
         
         
